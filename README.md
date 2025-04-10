@@ -7,10 +7,15 @@ I am developing a cloud-based application that allows background-verified person
 #### This code implements a console-based application called "Friend and Foster," which allows users to register, log in, and view categorized dog profiles. Here's a breakdown of how it works: ####
 ---
 ### 1. Data Storage ###
+
 •	Users: Stored in an in-memory dictionary (users) where the key is the email, and the value is the password.
+
 •	Verification Codes: A HashSet (validVerificationCodes) contains predefined admin-provided codes for account verification.
+
 •	Dog Profiles:
+
 •	A List<string> (dogProfiles) stores general dog profiles.
+
 •	A nested dictionary (categorizedDogProfiles) organizes dog profiles by breed categories (e.g., "Toy Breed") and age ranges (e.g., "0-2 years").
 ---
 ### 2. Main Program Flow ###
