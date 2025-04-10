@@ -1,10 +1,10 @@
 ## Friend and Foster App ##
 
-I am ndeveloping a cloud-based application that allows background-verified personnel to rent rescue dogs from local shelters.
+I am developing a cloud-based application that allows background-verified personnel to rent rescue dogs from local shelters.
 
 
 
-This code implements a console-based application called "Friend and Foster," which allows users to register, log in, and view categorized dog profiles. Here's a breakdown of how it works:
+#### This code implements a console-based application called "Friend and Foster," which allows users to register, log in, and view categorized dog profiles. Here's a breakdown of how it works: ####
 ---
 ### 1. Data Storage ###
 •	Users: Stored in an in-memory dictionary (users) where the key is the email, and the value is the password.
