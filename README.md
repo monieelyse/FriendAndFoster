@@ -18,7 +18,7 @@ I am developing a cloud-based application that allows background-verified person
 
 •	A List<string> (dogProfiles) stores general dog profiles.
 
-•	A nested dictionary (categorizedDogProfiles) organizes dog profiles by breed categories (e.g., "Toy Breed") and age ranges (e.g., "0-2 years").
+•	A nested dictionary (categorizedDogProfiles) organizes dog profiles by breed categories (e.g., "Toy Breed") and additional categories such as size, age, hypoallergenic status, and color.
 
 ---
 ### 2. Main Program Flow ###
@@ -38,8 +38,12 @@ The Register method:
 ---
 ### 4. Viewing Dog Profiles ###
 The ShowDogProfiles method:
-1.	Prompts the user to select a breed category (e.g., "Toy Breed").
-2.	Prompts the user to select an age range (e.g., "0-2 years").
+1.	Prompts the user to select a category (e.g., "Breed", "Size", "Age", "Hypoallergenic", "Color").
+2.	Prompts the user to select a subcategory within the chosen category:
+   - **Size**: Options include "0-4 pounds", "6-12 pounds", "12-20 pounds", "20-30 pounds", "30 pounds and above".
+   - **Age**: Options include "0-3 years", "4-7 years", "8-11 years", "12 and older".
+   - **Hypoallergenic**: Options include "Yes" and "No".
+   - **Color**: Options include "White", "Black", "Dapple", "Orange", "Red", "Grey".
 3.	Displays the corresponding dog profiles from the categorizedDogProfiles dictionary.
 4.	Handles invalid inputs by returning to the main menu.
 ---
@@ -57,5 +61,6 @@ The Login method:
 ---
 ### Key Features ###
 •	User Authentication: Ensures only verified users can register and log in.
-•	Categorized Dog Profiles: Allows users to explore dog profiles based on breed and age.
+•	Categorized Dog Profiles: Allows users to explore dog profiles based on breed, size, age, hypoallergenic status, and color.
 •	Error Handling: Provides feedback for invalid inputs (e.g., incorrect email format, invalid category/age selection).
+
