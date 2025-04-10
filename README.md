@@ -17,6 +17,7 @@ I am developing a cloud-based application that allows background-verified person
 •	A List<string> (dogProfiles) stores general dog profiles.
 
 •	A nested dictionary (categorizedDogProfiles) organizes dog profiles by breed categories (e.g., "Toy Breed") and age ranges (e.g., "0-2 years").
+
 ---
 ### 2. Main Program Flow ###
 The Main method serves as the entry point and displays a welcome message. It provides three options:
