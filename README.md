@@ -49,7 +49,9 @@ The Login method:
 4.	Displays a success message if the credentials are correct; otherwise, it notifies the user of incorrect credentials.
 ---
 ### 6. Utility Method ###
+
 •	IsValidEmail: Uses a regular expression to validate the format of an email address.
+
 ---
 ### Key Features ###
 •	User Authentication: Ensures only verified users can register and log in.
