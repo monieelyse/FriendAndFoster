@@ -1,3 +1,5 @@
+![Logo](logo.jpeg)
+
 ## Friend and Foster App ##
 
 I am developing a cloud-based application that allows background-verified personnel to rent rescue dogs from local shelters.
