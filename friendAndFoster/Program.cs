@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -56,6 +56,43 @@ class Program
                 { "3-5", new List<string> { "Thor - Rottweiler, 4 years old, confident and calm." } },
                 { "5-8", new List<string> { "Bruno - German Shepherd, 7 years old, intelligent and loyal." } },
                 { "8-20", new List<string> { "Maximus - Saint Bernard, 12 years old, loving and gentle." } }
+            }
+        },
+        {
+            "Size", new Dictionary<string, List<string>>
+            {
+                { "0-4 pounds", new List<string> { "Tiny - Chihuahua, 1 year old, hypoallergenic, white." } },
+                { "6-12 pounds", new List<string> { "Luna - Pomeranian, 4 years old, hypoallergenic, orange." } },
+                { "12-20 pounds", new List<string> { "Coco - French Bulldog, 3 years old, non-hypoallergenic, black." } },
+                { "20-30 pounds", new List<string> { "Max - Beagle, 5 years old, non-hypoallergenic, dapple." } },
+                { "30 pounds and above", new List<string> { "Buddy - Golden Retriever, 2 years old, non-hypoallergenic, red." } }
+            }
+        },
+        {
+            "Age", new Dictionary<string, List<string>>
+            {
+                { "0-3 years", new List<string> { "Charlie - Beagle, 1 year old, non-hypoallergenic, black." } },
+                { "4-7 years", new List<string> { "Ruby - Labrador, 5 years old, non-hypoallergenic, grey." } },
+                { "8-11 years", new List<string> { "Oscar - Dachshund, 9 years old, hypoallergenic, white." } },
+                { "12 and older", new List<string> { "Bella - Shih Tzu, 12 years old, hypoallergenic, orange." } }
+            }
+        },
+        {
+            "Hypoallergenic", new Dictionary<string, List<string>>
+            {
+                { "Yes", new List<string> { "Lucy - Poodle, 4 years old, hypoallergenic, white." } },
+                { "No", new List<string> { "Buddy - Golden Retriever, 2 years old, non-hypoallergenic, red." } }
+            }
+        },
+        {
+            "Color", new Dictionary<string, List<string>>
+            {
+                { "White", new List<string> { "Oscar - Dachshund, 9 years old, hypoallergenic, white." } },
+                { "Black", new List<string> { "Charlie - Beagle, 1 year old, non-hypoallergenic, black." } },
+                { "Dapple", new List<string> { "Max - Beagle, 5 years old, non-hypoallergenic, dapple." } },
+                { "Orange", new List<string> { "Bella - Shih Tzu, 12 years old, hypoallergenic, orange." } },
+                { "Red", new List<string> { "Buddy - Golden Retriever, 2 years old, non-hypoallergenic, red." } },
+                { "Grey", new List<string> { "Ruby - Labrador, 5 years old, non-hypoallergenic, grey." } }
             }
         }
     };
@@ -132,55 +169,48 @@ class Program
 
     static void ShowDogProfiles()
     {
-        Console.WriteLine("\n--- Dog Profiles ---");
-        Console.WriteLine("Choose a breed category:");
-        Console.WriteLine("1. Toy Breed");
-        Console.WriteLine("2. Small Breed");
-        Console.WriteLine("3. Intermediate Breed");
-        Console.WriteLine("4. Large Breed");
+        Console.WriteLine("Select a category to filter dog profiles:");
+        Console.WriteLine("1. Breed");
+        Console.WriteLine("2. Size");
+        Console.WriteLine("3. Age");
+        Console.WriteLine("4. Hypoallergenic");
+        Console.WriteLine("5. Color");
 
         string categoryChoice = Console.ReadLine();
         string selectedCategory = categoryChoice switch
         {
-            "1" => "Toy Breed",
-            "2" => "Small Breed",
-            "3" => "Intermediate Breed",
-            "4" => "Large Breed",
+            "1" => "Breed",
+            "2" => "Size",
+            "3" => "Age",
+            "4" => "Hypoallergenic",
+            "5" => "Color",
             _ => null
         };
 
         if (selectedCategory == null || !categorizedDogProfiles.ContainsKey(selectedCategory))
         {
-            Console.WriteLine("Invalid category choice. Returning to main menu.");
+            Console.WriteLine("Invalid category. Returning to main menu.");
             return;
         }
 
-        Console.WriteLine("\nChoose an age range:");
-        Console.WriteLine("1. 0-2 years");
-        Console.WriteLine("2. 3-5 years");
-        Console.WriteLine("3. 5-8 years");
-        Console.WriteLine("4. 8-20 years");
-
-        string ageChoice = Console.ReadLine();
-        string selectedAgeRange = ageChoice switch
+        Console.WriteLine($"Select a subcategory for {selectedCategory}:");
+        foreach (var subcategory in categorizedDogProfiles[selectedCategory].Keys)
         {
-            "1" => "0-2",
-            "2" => "3-5",
-            "3" => "5-8",
-            "4" => "8-20",
-            _ => null
-        };
-
-        if (selectedAgeRange == null || !categorizedDogProfiles[selectedCategory].ContainsKey(selectedAgeRange))
-        {
-            Console.WriteLine("Invalid age range choice. Returning to main menu.");
-            return;
+            Console.WriteLine($"- {subcategory}");
         }
 
-        Console.WriteLine($"\n--- {selectedCategory} (Age {selectedAgeRange}) ---");
-        foreach (var profile in categorizedDogProfiles[selectedCategory][selectedAgeRange])
+        string subcategoryChoice = Console.ReadLine();
+        if (categorizedDogProfiles[selectedCategory].ContainsKey(subcategoryChoice))
         {
-            Console.WriteLine(profile);
+            Console.WriteLine($"Dog profiles in {subcategoryChoice}:");
+            foreach (var profile in categorizedDogProfiles[selectedCategory][subcategoryChoice])
+            {
+                Console.WriteLine(profile);
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid subcategory. Returning to main menu.");
         }
     }
 
