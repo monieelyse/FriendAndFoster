@@ -2,7 +2,7 @@
 
 ## Friend and Foster App ##
 
-[❣ Contribute to funding Friend and Foster App ❣](https://www.paypal.com/paypalme/monieelyse)
+[❣ Contribute to funding Friend and Foster App ❣](https://angelink.com/fundraiser-public/d34d37e7-fa36-4454-97af-86369158125d)
 
 
 I am developing a cloud-based application that allows background-verified personnel to rent rescue dogs from local shelters.
