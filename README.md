@@ -2,14 +2,25 @@
 
 ## Friend and Foster App ##
 
-[❣ Contribute to funding Friend and Foster App ❣](https://angelink.com/fundraiser-public/d34d37e7-fa36-4454-97af-86369158125d)
-
-
 I am developing a cloud-based application that allows background-verified personnel to rent rescue dogs from local shelters.
 
+___________________
 
+[❣ Contribute to funding Friend and Foster App ❣](https://angelink.com/fundraiser-public/d34d37e7-fa36-4454-97af-86369158125d)
 
-#### This code implements a console-based application called "Friend and Foster," which allows users to register, log in, and view categorized dog profiles. Here's a breakdown of how it works: ####
+Support Friend and Foster – Empower Connections, Make a Difference.
+
+Click the link above to be directed to the Friend and Foster app's donation page! Our mission is to create a platform that brings people together, fosters meaningful and *pawwwsitive* friendships, and empowers communities and dogs in need. Your generous contributions will directly support the growth and development of this innovative app, helping us:
+- Enhance features to better connect users and build lasting relationships.
+- Maintain and improve the app’s user-friendly design and functionality.
+- Expand our reach to foster more connections and positive impacts worldwide.
+
+By donating, you’re not just funding an app—you’re investing in a vision of kindness, connection, and community. Every contribution, big or small, helps us move closer to creating a platform that truly makes a difference. Thank you for being a part of the Friend and Foster journey! 
+
+____________________
+
+## This code implements a console-based application called "Friend and Foster," which allows users to register, log in, view categorized rescue dog profiles, rent them and ultimately and hopefully rescue them. There is also an online shop to rent and buy products for the user's rescue rental and other furry friends the user may have at home. Here's a breakdown of how it works: ##
+
 ---
 ### 1. Data Storage ###
 
