@@ -57,7 +57,7 @@ The ShowDogProfiles method:
    - **Size**: Options include "0-4 pounds", "6-12 pounds", "12-20 pounds", "20-30 pounds", "30 pounds and above".
    - **Age**: Options include "0-3 years", "4-7 years", "8-11 years", "12 and older".
    - **Hypoallergenic**: Options include "Yes" and "No".
-   - **Color**: Options include "White", "Black", "Dapple", "Orange", "Red", "Grey".
+   - **Color**: Options include "White", "Black", "Dapple", "Orange", "Red", "Grey." "Brindle," etc.
 3.	Displays the corresponding dog profiles from the categorizedDogProfiles dictionary.
 4.	Handles invalid inputs by returning to the main menu.
 ---
@@ -77,4 +77,17 @@ The Login method:
 •	User Authentication: Ensures only verified users can register and log in.
 •	Categorized Dog Profiles: Allows users to explore dog profiles based on breed, size, age, hypoallergenic status, and color.
 •	Error Handling: Provides feedback for invalid inputs (e.g., incorrect email format, invalid category/age selection).
+
+### 7. Shop Features ###
+Users can shop for pet-related products, either renting or purchasing them. Below is the list of available products:
+
+| Product                     | Hourly Rent | Daily Rent | Purchase Price |
+|-----------------------------|-------------|------------|----------------|
+| Leash                       | N/A         | $1         | $5             |
+| Harness                     | N/A         | $1         | $10            |
+| Dog Stroller                | $5          | $40        | $80            |
+| Poop Bags                   | N/A         | N/A        | $5             |
+| Dog Ear Wipes               | N/A         | N/A        | $5             |
+| Dog Paw Wipes               | N/A         | N/A        | $5             |
+| Dog Eye Drops               | N/A         | N/A        | $5            
 
