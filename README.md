@@ -50,23 +50,25 @@ The Register method:
 5.	If all checks pass, the user is registered, and their email/password is stored in the users dictionary.
 6.	Redirects the user to view dog profiles by calling ShowDogProfiles.
 ---
-### 4. Viewing Dog Profiles ###
-The ShowDogProfiles method:
-1.	Prompts the user to select a category (e.g., "Breed", "Size", "Age", "Hypoallergenic", "Color").
-2.	Prompts the user to select a subcategory within the chosen category:
-   - **Size**: Options include "0-4 pounds", "6-12 pounds", "12-20 pounds", "20-30 pounds", "30 pounds and above".
-   - **Age**: Options include "0-3 years", "4-7 years", "8-11 years", "12 and older".
-   - **Hypoallergenic**: Options include "Yes" and "No".
-   - **Color**: Options include "White", "Black", "Dapple", "Orange", "Red", "Grey." "Brindle," etc.
-3.	Displays the corresponding dog profiles from the categorizedDogProfiles dictionary.
-4.	Handles invalid inputs by returning to the main menu.
----
-### 5. Login Process ###
+### 4. Login Process ###
 The Login method:
 1.	Prompts the user for their email and password.
 2.	Checks if the email exists in the users dictionary.
 3.	Verifies the password against the stored value.
 4.	Displays a success message if the credentials are correct; otherwise, it notifies the user of incorrect credentials.
+---
+### 5. Viewing Dog Profiles ###
+The ShowDogProfiles method:
+1.	Search for dog profile by any of the 50 states in America
+2.  Then, search by any of the major cities in those states that Friend And Foster is currently avaiable in
+3. Prompts the user to select a category (e.g., "Breed", "Size", "Age", "Hypoallergenic", "Color").
+4.	Prompts the user to select a subcategory within the chosen category:
+   - **Size**: Options include "0-4 pounds", "6-12 pounds", "12-20 pounds", "20-30 pounds", "30 pounds and above".
+   - **Age**: Options include "0-3 years", "4-7 years", "8-11 years", "12 and older".
+   - **Hypoallergenic**: Options include "Yes" and "No".
+   - **Color**: Options include "White", "Black", "Dapple", "Orange", "Red", "Grey".
+5.	Displays the corresponding dog profiles from the categorizedDogProfiles dictionary.
+6.	Handles invalid inputs by returning to the main menu.
 ---
 ### 6. Utility Method ###
 
