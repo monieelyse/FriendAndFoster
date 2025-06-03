@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("friendAndFoster")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+407c50c2738ffc3c965d69a00d88b81a3e7daccb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+865634a9290981a43ab6139368dad3d7e31e2efd")]
 [assembly: System.Reflection.AssemblyProductAttribute("friendAndFoster")]
 [assembly: System.Reflection.AssemblyTitleAttribute("friendAndFoster")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
