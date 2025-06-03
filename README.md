@@ -60,7 +60,7 @@ The Login method:
 ### 5. Viewing Dog Profiles ###
 The ShowDogProfiles method:
 1.	Search for dog profile by any of the 50 states in America
-2.  Then, search by any of the major cities in those states that Friend And Foster is currently avaiable in
+2.  Then, search by any of the major cities in those states that Friend And Foster is currently available in
 3. Prompts the user to select a category (e.g., "Breed", "Size", "Age", "Hypoallergenic", "Color").
 4.	Prompts the user to select a subcategory within the chosen category:
    - **Size**: Options include "0-4 pounds", "6-12 pounds", "12-20 pounds", "20-30 pounds", "30 pounds and above".
