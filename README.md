@@ -1,11 +1,13 @@
 ![Logo](logo.jpeg)
 
-## Friend and Foster App ##
+## Friend and Foster  ##
 
 ## License - This project is proprietary and protected under U.S. copyright law.  No part of this codebase may be used, copied, modified, or distributed without explicit written permission from the owner.
 -----
 
 I am developing a cloud-based application that allows background-verified personnel to rent rescue dogs from local shelters.
+
+## 🔗 This is the README to the OG friend and foster prototype console app, for the new and improved Friend and Foster **Mobile App**: [GitHub – monieelyse/friendandfosterapp](https://github.com/monieelyse/friendandfosterapp)
 
 ___________________
 
